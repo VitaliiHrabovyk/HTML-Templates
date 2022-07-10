@@ -1,0 +1,268 @@
+body {
+    background-color: #233b3f;
+    min-height: 800px;
+}
+
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit:cover;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+
+
+.main{
+    position: relative;
+    color: white;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+    width: 70%;
+  }
+
+ .main .grow {
+    font-size: 12rem;
+    font-weight: 900;
+    text-shadow: 0 0 25px black;
+    position: relative;
+    letter-spacing: -25px;
+  }
+
+
+  #section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: auto;
+  
+    /* Centering the container's content vertically 
+    and horizontally */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    margin: 40px auto;
+
+  }
+
+ .tabs {
+    position: absolute;
+    z-index: 3;
+    top: 40px;
+    right: 20px;
+
+    }
+
+    .tabs a {
+        color:#b0b4a6;
+    }
+    .tabs a:hover {
+        color:#fff;
+    }
+
+    .tabs ul {
+        border-bottom-style:none;
+        justify-content: end;
+    }
+
+    .tabs li.is-active a {
+        color:#fff;
+    }
+
+    .tabs li.is-active a:after{
+        content: " ";
+        display: block;
+        width: 16px;
+        height: 2px;
+        background-color: #92de1c;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .tabs li.is-active a::before{
+        content: " ";
+        display: block;
+        width: 16px;
+        height: 2px;
+        background-color: #92de1c;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    .tabs button {
+        background: none;
+        border: 2px solid #94de1d;
+        border-radius: 15px 0px 15px 15px;
+        color: #fff;
+        height: 30px;
+        vertical-align: bottom;
+        margin-top: 6px;
+        width: 138px;
+    }
+    .main button {
+        background: #94de1d;
+        border: 2px solid #94de1d;
+        border-radius: 20px 0px 20px 20px;
+        color: #fff;
+        height: 40px;
+        vertical-align: bottom;
+        margin-top: 6px;
+        width: 200px;
+        cursor: pointer;
+        z-index: 1;
+        position: relative;
+        box-shadow: 3px 0px 15px #000;
+    }
+
+
+ .radius-gradient {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: radial-gradient(#00000000,#00000021,#00000054, #000000);    
+  }
+
+  .tabs .material-symbols-outlined{
+    margin-left: 51px;
+    font-size: 40px;
+    color: #849288;
+  }
+
+  .leaf-right {
+
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #94de1d;
+    border-radius: 50%;
+    right: -100px;
+    top: 50%;
+    transform: rotate(45deg);
+
+  }
+
+  .leaf-right::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    left: -17px;
+    top: -17px;
+    border: 1px solid #2e4e4d;
+  }
+  .leaf-left::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    left: -17px;
+    top: -17px;
+    border: 1px solid #2e4e4d;
+  }
+
+  .leaf-right .material-symbols-outlined{
+    margin: 5px;
+    font-size: 2rem;
+  }
+
+  .leaf-left {
+
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #94de1d;
+    border-radius: 50%;
+    left: -100px;
+    top: 50%;
+    transform: rotate(230deg);
+
+  }
+
+  .leaf-left .material-symbols-outlined{
+    margin: 5px;
+    font-size: 2rem;
+  }
+
+
+  .social {
+    display: block;
+    position: absolute;
+    width: 30%;
+    height: 100px;
+    z-index: 3;
+    bottom: 0px;
+    font-size: 30px;
+    word-spacing: 30px;
+    
+    
+}
+.social i {
+    color: #8d9e8d; 
+    cursor: pointer;  
+}
+.social i:hover {
+    color: #ffffff; 
+    cursor: pointer;  
+}
+
+.logo {
+    height: 35px;
+    position: absolute;
+    display: inline;
+    top: 40px;
+    left: 100px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 900;
+    z-index: 3;
+    float: left;
+    width: 250px;}
+.logo img{
+    height: 35px;
+    
+}
+
+.logo span::before {
+
+        display: inline-block;
+        content: "";
+        width: 10px;
+        height: 3px;
+        background: #93de1c;
+        vertical-align: middle;
+        margin-right: -2px;
+        margin-bottom: 5px
+
+}
+
+.logo span {
+    align-items: center;
+    justify-content: center;
+}
+
+.growtree {
+    float: left;
+    top: -2px;
+    position: relative;
+    left: -1px;
+}
